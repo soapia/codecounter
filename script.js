@@ -11,7 +11,7 @@ function getLines(dataaa) {
     var decks = Math.ceil(dataaa.length / 2)
     console.log(decks)
     for (var i = 0; i < decks; i++) {
-        $("#addToMe").append(`<div class="card-deck" id="deck${i}"><p>hi</p></div>`)
+        $("#addToMe").append(`<div class="card-deck" id="deck${i}"></div>`)
         console.log("added" + i)
     }
     var deckCounter = 0
@@ -45,6 +45,7 @@ function getLines(dataaa) {
 
 
 function doShit() {
+    $("#addToMe").append(`<p class="text-center">i'm thinking...</p>`)
     username = $("#github").val()
     repository = $("#repository").val()
     fetch(`https://api.codetabs.com/count-loc/get?repo=${username}/${repository}`)

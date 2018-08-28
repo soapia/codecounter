@@ -2,22 +2,33 @@
 <html>
     <head>
         <title>count ya code</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet">
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     </head>
-    <body class="">
-        <h1>hey what's up hello</h1>
-        <p>
-            so what's your github username?
-            <input type="text" id="github"/>
-            <br>
-            and your repository name?
-            <input type="text" id="repository"/>
-        </p>
-        <button onClick="doShit()">let's make some magic happen ;)</button>
+    <body>
+        <div class="greeting">
+            <h1>hey what's up hello</h1>
+            <p>
+                // so what's your github username?
+                <input type="text" id="github"/>
+                <br>
+                // and your repository name?
+                <input type="text" id="repository"/>
+                <br>
+                <button onClick="doShit()">let's make some magic happen ;)</button>
+            </p>
+        </div>
         <div id="addToMe">
         </div>
         <script src="script.js"></script>
+        <style>
+            body {
+                background-color: #222326;
+                color: #5FBC56;
+                font-family: 'Source Code Pro', monospace;
+            }
+        </style>
     </body>
 </html>

@@ -1,3 +1,12 @@
-html {
-    color: green
+.greeting * {
+    margin-top: 10px;
+    text-align: center;
+}
+
+#addToMe .card-deck {
+    margin: 10px 10px 10px 10px
+}
+
+#addToMe .card {
+    margin: 10px 10px 10px 10px
 }
